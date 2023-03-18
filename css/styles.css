@@ -1,40 +1,54 @@
- body {
-  	margin: 0;
+ html
+ {
+	height: 100%;
+ }
+
+ body
+ {
+	background: url('/img/Curves1.png')  100% 100% / cover;
+	position: relative;
+	z-index: -1;
+	margin: 0;
   	padding: 0;
  }
+
  
- #background 
-{ 
-	background: url('img/Curves1.png');
-	min-height: 100vh;
-} 
-
- #Rectangle1 
-{ 
-	background-color: white;
-	margin-top: 15vh;
-	margin-bottom: 15vh;
-	min-height: 100vh;
-	min-width: 65vw;
-} 
-
- #Rectangle1copy2 
-{ 
-	width: 1324px;
-	height: 1452px;
-} 
-
- #Rectangle2 
-{ 
-	width: 131px;
-	height: 109px;
-} 
-
- #Rectangle3 
+ #upper_white_square
 {  
-	width: 164px;
-	height: 514px;
+	background-color:white;
+	position: relative;
+	height: 50px;
+	z-index: 0;
 } 
+
+#lower_white_square
+{  
+	background-color:white;
+	position: relative;
+	height: 100px;
+	z-index: 0;
+	bottom: 50px;
+} 
+
+ #form_background
+{ 
+	background-color: rgba(255, 255, 255, 0.3);
+	z-index: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+} 
+
+#upper_section
+{
+	background-color: whitesmoke;
+	height:50vh;
+}
+
+#lower_section
+{
+	background-color: rgb(159, 23, 61);
+	height: 50vh;
+}
 
  #NewCOMPANYWebsite 
 { 
