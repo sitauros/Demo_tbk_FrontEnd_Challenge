@@ -5,7 +5,7 @@
 
  body
  {
-	background: url('/img/Curves1.png')  100% 100% / cover;
+	background: url('/img/Background.png')  100% 100% / cover;
 	position: relative;
 	margin: 0;
   	padding: 0;
@@ -15,9 +15,9 @@
 {  	
 	border: 10px solid rgb(244, 244, 244);
 	position: relative;
-	top: 50px;
+	top: 100px;
 	width: 164px;
-	height: 450px;
+	height: 512px;
 	z-index: 1;
 } 
 
@@ -54,16 +54,27 @@
 	background-color: rgb(159, 23, 61);
 }
 
-#YouareCordiallyInvit 
+
+#close_button 
 { 
 	position: relative;
-	padding-top: 3rem;
+	top: 25px;
+	right: 25px;
+	float: right;
+	width: 15px;
+	height: 15px;
+} 
+
+#cordial-1 
+{ 
+	position: relative;
+	padding-top: 6rem;
 	padding-bottom: 3rem;
 	width: 307px;
 	height: 51px;
 } 
 
-#ofthe 
+#cordial-2 
 { 
 	position: relative;
 	padding-top: 2rem;
@@ -72,7 +83,7 @@
 	height: 22px;
 } 
 
- #NewCOMPANYWebsite 
+ #cordial-3
 { 
 	position: relative;
 	padding-top: 1rem;
@@ -81,66 +92,43 @@
 	height: 165px;
 } 
 
- #Loremipsumdolorsitam 
+ #lorem 
 { 
 	position: relative;
-	width: 684px;
-	height: 53px;
+	padding-top: 7rem;
+	padding-bottom: 1rem;
+	z-index: 1;
+	font-family: sans-serif;
 } 
 
- #Adestodionoster 
+#company_message hr
+{
+	width: 164px;
+	height: 1px;
+	background-color: rgb(196, 0, 69)
+}
+
+ #sneak_title
 { 
+	position: relative;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	width: 236px;
 	height: 16px;
 } 
 
- #Exvisametgraeciaccum 
+
+ #sneak_list
 { 
-	width: 461px;
-	height: 143px;
+	position: relative;
+	padding-top: 2rem;
+	padding-bottom: 4rem;
 } 
 
- #Rectangle4 
-{ 
-	width: 9px;
-	height: 9px;
-} 
-
- #Rectangle4copy 
-{ 
-	width: 9px;
-	height: 9px;
-} 
-
- #Rectangle4copy2 
-{ 
-	width: 9px;
-	height: 9px;
-} 
-
- #Rectangle4copy3 
-{ 
-	width: 9px;
-	height: 9px;
-} 
-
- #Rectangle4copy4 
-{ 
-	width: 9px;
-	height: 9px;
-} 
-
- #Layer2 
-{ 
-	width: 160px;
-	height: 2px;
-} 
-
- #Closebutton 
-{ 
-	width: 15px;
-	height: 15px;
-} 
+#sneak_list li{
+	list-style-image: url(/img/Bullet.png);
+	padding-left: 10px;
+}
 
  #Rectangle1copy 
 { 
