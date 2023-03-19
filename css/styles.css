@@ -7,69 +7,83 @@
  {
 	background: url('/img/Curves1.png')  100% 100% / cover;
 	position: relative;
-	z-index: -1;
 	margin: 0;
   	padding: 0;
  }
 
- 
- #upper_white_square
-{  
-	background-color:white;
+ #upper_rectangle
+{  	
+	border: 10px solid rgb(244, 244, 244);
 	position: relative;
-	height: 50px;
-	z-index: 0;
+	top: 50px;
+	width: 164px;
+	height: 450px;
+	z-index: 1;
 } 
 
 #lower_white_square
 {  
-	background-color:white;
+	border: 10px solid white;
 	position: relative;
-	height: 100px;
-	z-index: 0;
-	bottom: 50px;
+	width: 164px;
+	height: 113px;
+	bottom: 405px;
+	z-index: 1;
 } 
 
  #form_background
 { 
-	background-color: rgba(255, 255, 255, 0.3);
-	z-index: 0;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	top: -350px;
+	background-color: rgba(255, 255, 255, 1);
+	z-index: auto;
 } 
+
+#new_website_text
+{
+	position: relative;
+	z-index: 1;
+}
 
 #upper_section
 {
-	background-color: whitesmoke;
-	height:50vh;
+	background-color: white;
 }
 
 #lower_section
 {
 	background-color: rgb(159, 23, 61);
-	height: 50vh;
 }
 
- #NewCOMPANYWebsite 
+#YouareCordiallyInvit 
 { 
-	width: 330px;
-	height: 165px;
-} 
-
- #YouareCordiallyInvit 
-{ 
+	position: relative;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 	width: 307px;
 	height: 51px;
 } 
 
- #ofthe 
+#ofthe 
 { 
+	position: relative;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	width: 47px;
 	height: 22px;
 } 
 
+ #NewCOMPANYWebsite 
+{ 
+	position: relative;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width: 330px;
+	height: 165px;
+} 
+
  #Loremipsumdolorsitam 
 { 
+	position: relative;
 	width: 684px;
 	height: 53px;
 } 
