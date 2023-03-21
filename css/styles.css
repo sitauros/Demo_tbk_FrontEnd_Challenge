@@ -1,21 +1,52 @@
- html
- {
+@font-face
+{
+	font-family: 'FuturaPT-Book';
+	src: url('/fonts/FuturaPT-Book.woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face
+{
+	font-family: 'FreightDispProBook-Italic';
+	src: url('/fonts/FreightDispProBook-Italic.woff2');
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face
+{
+	font-family: 'FreightDispProSemibold-Regular';
+	src: url('/fonts/FreightDispProSemibold-Regular.woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+html
+{
 	height: 100%;
- }
+}
 
- body
- {
-	background: url('/img/Background.png')  100% 100% / cover;
-	position: relative;
+body
+{
+	background: url('/img/background.png') left top / cover;
 	margin: 0;
-  	padding: 0;
- }
+	padding: 0;
+}
 
- #upper_rectangle
+.container
+{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	bottom: 400px;
+}
+
+#upper_rectangle
 {  	
 	border: 10px solid rgb(244, 244, 244);
 	position: relative;
-	top: 100px;
+	top: 450px;
 	width: 164px;
 	height: 512px;
 	z-index: 1;
@@ -25,13 +56,13 @@
 {  
 	border: 10px solid white;
 	position: relative;
+	bottom: 56.5px;
 	width: 164px;
 	height: 113px;
-	bottom: 405px;
 	z-index: 1;
 } 
 
- #form_background
+#popover
 { 
 	top: -350px;
 	background-color: rgba(255, 255, 255, 1);
@@ -52,8 +83,8 @@
 #lower_section
 {
 	background-color: rgb(159, 23, 61);
+	clear: right;
 }
-
 
 #close_button 
 { 
@@ -69,147 +100,292 @@
 { 
 	position: relative;
 	padding-top: 6rem;
-	padding-bottom: 3rem;
-	width: 307px;
-	height: 51px;
+	padding-bottom: 1rem;
+	font-family: FuturaPT-Book;
+	font-size: 21px;
 } 
 
 #cordial-2 
 { 
 	position: relative;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	width: 47px;
-	height: 22px;
+	padding-bottom: 1rem;
+	font-family: FreightDispProBook-Italic;
+	font-size: 24px;
 } 
 
- #cordial-3
+.cordial-3
 { 
 	position: relative;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	width: 330px;
-	height: 165px;
+	font-family: FreightDispProSemibold-Regular;
+	font-size: 50px;
+	line-height: 50px;
 } 
 
- #lorem 
+@media (min-width: 768px)
+{
+	.cordial-3
+	{
+		font-size: 70px;
+		line-height: 60px;
+	}
+}
+
+.firebrick
+{
+	color:rgb(159, 32, 61);
+}
+
+#lorem 
 { 
 	position: relative;
 	padding-top: 7rem;
 	padding-bottom: 1rem;
-	z-index: 1;
 	font-family: sans-serif;
-} 
+	z-index: 1;
+}
 
 #company_message hr
 {
+	position :relative;
 	width: 164px;
 	height: 1px;
-	background-color: rgb(196, 0, 69)
+	background-color: rgb(196, 0, 69);
+	z-index: 1;
 }
 
- #sneak_title
+#sneak_title
 { 
 	position: relative;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	width: 236px;
-	height: 16px;
+	font-family: FuturaPT-Book;
+	font-size: 21px;
+	z-index: 1;
 } 
 
-
- #sneak_list
+#sneak_list
 { 
 	position: relative;
 	padding-top: 2rem;
-	padding-bottom: 4rem;
+	z-index: 1;
 } 
 
-#sneak_list li{
-	list-style-image: url(/img/Bullet.png);
+#sneak_list li
+{
+	list-style-image: url(/img/list_bullet.png);
 	padding-left: 10px;
+	font-family: FuturaPT-Book;
+	font-size: 21px;
 }
 
- #Rectangle1copy 
-{ 
-	width: 1300px;
-	height: 454px;
+#signup_text
+{
+	position: relative;
+	z-index: 1;
+}
+
+#signup-1
+{
+	position: relative;
+	padding-top: 5rem;
+	font-family: FreightDispProSemibold-Regular;
+	font-size: 34px;
+	line-height: 34px;
+	color: white;
 } 
 
- #GetYourFootintheDoor 
+#signup-2
 { 
-	width: 477px;
-	height: 22px;
+	position: relative;
+	padding-bottom: 2rem;
+	font-family: FuturaPT-Book;
+	font-size: 23px;
+	line-height: 23px;
+	color: white;
 } 
 
- #Knowthemomentourneww 
-{ 
-	width: 407px;
-	height: 23px;
+#signup_form
+{
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+	z-index: 1;
+}
+
+#form_laptop > .row > .form_email,
+#form_laptop > .row > .form_submit
+{
+	margin-left: 15px;
+}
+
+#form_laptop > .row > .form_name,
+#form_laptop > .row > .form_email,
+#form_laptop > .row > .form_submit
+{
+	height: 58px;
 } 
 
- #Rectangle5 
-{ 
-	width: 273px;
-	height: 60px;
+#form_mobile > .row > .form_name,
+#form_mobile > .row > .form_email,
+#form_mobile > .row > .form_submit
+{
+	height: 38px;
 } 
 
- #Name 
-{ 
-	width: 51px;
+.form_name::placeholder,
+.form_email::placeholder
+{
+	font-family: Trebuchet MS, Roboto, sans-serif;
+	font-size: 21px;
+	font-weight: 500;
+	color: black;
+}
+
+#form_laptop > .row > .form_submit
+{
+	background-color: black;
+	letter-spacing: 3px;
+	font-family: Georgia; 
+	font-size: 20px;
+	color: white;
+	border: none;
+}
+
+#form_mobile > .row > .form_submit
+{
+	background-color: black;
+	letter-spacing: 2px;
+	font-family: Georgia; 
+	font-size: 15px;
+	color: white;
+	border: none;
+}
+
+#CASL_section
+{
+	position: relative;
+	padding-top: 2rem;
+	padding-bottom: 10rem;
+	z-index: 1;
+}
+
+#CASL_wrap
+{
+	display: block;
+	position: relative;
+	padding-left: 35px;
+}
+
+#CASL_checkbox_placeholder
+{	
+	position: absolute;
+	cursor: pointer;
+	content: "";
+	height: 20px;
+	width: 20px;
+	top: 0;
+	left: 0;
+}
+
+#CASL_label
+{
+	display: inline-block;
+	align-self: start;
+	color: rgb(254, 190, 213);
+	font-family: FuturaPT-Book;
+	font-size: 17px;
+	line-height: 17px;
+}
+
+#CASL_checkbox
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: rgb(159, 23, 61);
+	border: 1px solid white;
+}
+
+#CASL_wrap input:checked ~ #CASL_checkbox
+{
+	background-color: rgb(159, 23, 61);
+}
+
+#CASL_checkbox::after
+{
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+#CASL_wrap input:checked ~ #CASL_checkbox::after 
+{
+	display: block;
+}
+
+#CASL_wrap #CASL_checkbox::after
+{
+	left: 5px;
+	bottom: 3px;
+	width: 8px;
 	height: 16px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+#chisel > picture > img
+{ 
+	position: relative;
+	bottom: 100px;
+	z-index: 0;
 } 
 
- #Rectangle5_0 
+@media (min-width: 768px){
+	#chisel > picture > img 
+	{
+		position: relative;
+	}
+}
+
+@media (min-width: 1200px){
+	#chisel > picture > img 
+	{
+		position: relative;
+	}
+}
+
+#shaving > picture > img
 { 
-	width: 273px;
-	height: 60px;
+	position: relative;
+	left: 44px;
+	bottom: 500px;
+	z-index: 1;
 } 
 
- #Email 
-{ 
-	width: 43px;
-	height: 17px;
-} 
+@media (min-width: 768px){
+	#shaving > picture > img 
+	{
+		position: relative;
+		left: 66px;
+	}
+}
 
- #Rectangle5_1 
-{ 
-	width: 141px;
-	height: 60px;
-} 
+@media (min-width: 1200px){
+	#shaving > picture > img 
+	{
+		position: relative;
+		left: 88px;
+	}
+}
 
- #submit 
-{ 
-	width: 79px;
-	height: 15px;
-} 
-
- #Loremipsumdolorsitam_0 
-{ 
-	width: 460px;
-	height: 47px;
-} 
-
- #Rectangle6 
-{ 
-	width: 18px;
-	height: 17px;
-} 
-
- #Rectangle3copy 
-{ 
-	width: 164px;
-	height: 113px;
-} 
-
- #Layer3
-{ 
-	width: 569px;
-	height: 495px;
-} 
-
- #Layer4 
-{ 
-	width: 177px;
-	height: 129px;
-} 
+#fill_space{
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+}
