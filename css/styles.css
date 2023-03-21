@@ -353,7 +353,7 @@ body
 #chisel > picture > img
 { 
 	position: relative;
-	bottom: 100px;
+	bottom: 100px; /* Change script.js if altered*/
 	z-index: 0;
 } 
 
