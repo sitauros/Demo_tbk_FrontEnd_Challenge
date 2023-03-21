@@ -37,6 +37,7 @@ body
 
 #overlay
 {
+	visibility: hidden;
 	opacity: 0.9;
 	background: black;
 	width: 100%;
@@ -48,6 +49,7 @@ body
 
 .container
 {
+	visibility: hidden;
 	width: 100vw;
 	height: 100vh;
 	position: relative;
@@ -357,6 +359,7 @@ body
 
 #chisel > picture > img
 { 
+	visibility: hidden;
 	position: relative;
 	bottom: 100px; /* Change script.js if removed */
 	z-index: 0;

@@ -1,12 +1,15 @@
-$(document).ready(function() {
+var THREE_SECONDS = 3000;
 
+$(document).ready(function() {
     $window = $(window);
     $document = $(document);
+    $overlay = $("#overlay");
+    $container = $(".container");
     $popover = $("#popover");
     $chisel = $("#chisel > picture > img");
     $shaving = $("#shaving > picture > img");
 
-    // Remove px from CSS string and then parse int
+    // Remove "px" from CSS value, then parse as int
     var shavingBottom = parseInt($shaving.css("bottom").substring (0, $shaving.css("bottom").length -2));
     var chiselBottom = parseInt($chisel.css("bottom").substring (0, $chisel.css("bottom").length -2));
 
@@ -23,5 +26,16 @@ $(document).ready(function() {
         $chisel.css({bottom: chiselBottom + chiselDelta + 'px'});
         $shaving.css({bottom: shavingBottom + shavingDelta + 'px'});
     });
-
 });
+
+$(window).on('load', function() {
+    setTimeout(function() {
+        toggle_popover();
+    },THREE_SECONDS);
+})
+
+function toggle_popover() {
+    $overlay.css("visibility", $overlay.css("visibility") == "visible" ? "hidden" : "visible");
+    $container.css("visibility", $container.css("visibility") == "visible" ? "hidden" : "visible");
+    $chisel.css("visibility", $chisel.css("visibility") == "visible" ? "hidden" : "visible");
+}
