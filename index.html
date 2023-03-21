@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0022)http://127.0.0.1:5500/ -->
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
@@ -12,12 +12,13 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 <body>
+	<div id="overlay"></div>
 	<div class="container">
 		<div id="upper_rectangle" class="mx-auto"></div>
 		<div id="popover">
 			<div id="upper_section">
 				
-				<div id="close_button" tabindex="1"><img src="img/close_button.png" alt="close_button"></div>
+				<div id="close_button" tabindex="1" alt="You are cordially invited to the launch of the new company website." ><img src="img/close_button.png" alt="close button"></div>
 				<div id="new_website_text" tabindex=2>
 					<div class="row text-center">
 						<span id="cordial-1" class="col-12">YOU ARE CORDIALLY INVITED<br>TO THE LAUNCH</span>
@@ -33,12 +34,12 @@
 						<p id="lorem" class="col-lg-6 col-8 mx-auto" tabindex=3 >Lorem ipsum dolor sit amet, vix suas liber conclusionemque eu. Ad quo esse purto eros, nemore volutpat ut quo, copiosae concludaturque nam in.</p>
 					</div>					
 					<hr />
-					<div id="sneak_peek" tabindex=4 >
+					<div id="sneak_peek" >
 						<div class="row text-center"> 
-							<span id="sneak_title" class="col-12" >AD EST ODIO NOSTER:</span>
+							<span id="sneak_title" class="col-12" tabindex="4">AD EST ODIO NOSTER:</span>
 						</div>
 						<div class="row">
-							<ul id="sneak_list" class="col-10 col-md-6 mx-auto">
+							<ul id="sneak_list" class="col-10 col-md-6 mx-auto" tabindex="5">
 								<li>Ex vis amet graeci accumsan</li>
 								<li>Civibus iracundia quo ad</li>
 								<li>Eu impetus feugiat civibus qui</li>
@@ -54,34 +55,34 @@
 				<picture>
 					<source srcset="img/shaving_100.png" media="(min-width: 1200px)">
 					<source srcset="img/shaving_75.png" media="(min-width: 768px)">
-					<img src="img/shaving_50.png" alt="shaving_50" />
+					<img src="img/shaving_50.png" alt="shaving" />
 				</picture>
 			</div>
 
 			<div id="lower_section" class="firebrick">
 				<div id="signup_text">
 					<div class="row text-center">
-						<span id="signup-1" class="col-12">GET YOUR FOOT IN THE DOOR.</span>
-						<span id="signup-2" class="col-12">Know the moment our new website goes live.</span>
+						<span id="signup-1" class="col-12" tabindex="6">GET YOUR FOOT IN THE DOOR.</span>
+						<span id="signup-2" class="col-12" tabindex="7">Know the moment our new website goes live.</span>
 					</div>
 				</div>
 				
 				<form id="signup_form">
 					<div id="form_laptop" class="d-none d-lg-block">
 						<div class="row justify-content-center">
-							<input class="form_name col-lg-3" title="name" name="name" placeholder="Name" tabindex=5 >
-							<input class="form_email col-lg-3" title="email" name="email" placeholder="Email" tabindex=6 >
-							<input class="form_submit col-lg-2" title="submit" type="submit" value="SUBMIT" tabindex=7 >	
+							<input class="form_name col-lg-3" title="name" name="name" placeholder="Name" tabindex=8>
+							<input class="form_email col-lg-3" title="email" name="email" placeholder="Email" tabindex=9>
+							<input class="form_submit col-lg-2" title="submit" type="submit" value="SUBMIT" tabindex=10>	
 						</div>
 					</div>
 					
 					<div id="form_mobile" class="d-block d-lg-none">
 						<div class="row justify-content-center">
-							<input class="form_name col-7 mt-4 mb-4" title="name" name="name" placeholder="Name" tabindex=5 >
-							<input class="form_email col-7 mb-4" title="email" name="email" placeholder="Email" tabindex=6 >
+							<input class="form_name col-7 mt-4 mb-4" title="name" name="name" placeholder="Name" tabindex=8>
+							<input class="form_email col-7 mb-4" title="email" name="email" placeholder="Email" tabindex=9>
 						</div>
 						<div class="row justify-content-center">
-							<input class="form_submit col-6 mt-2" title="submit" type="submit" value="SUBMIT" tabindex=7 >
+							<input class="form_submit col-6 mt-2" title="submit" type="submit" value="SUBMIT" tabindex=10>
 						</div>
 					</div>
 				</form>
@@ -89,8 +90,8 @@
 				<div id="CASL_section">
 					<div class="row justify-content-center">
 						<span id="CASL_wrap" class="col-8 col-lg-6">
-							<label id="CASL_label" for="CASL_checkbox_placeholder" tabindex=8>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
-								<input id="CASL_checkbox_placeholder" type="checkbox" />
+							<label id="CASL_label" for="CASL_checkbox_placeholder" tabindex=12>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+								<input id="CASL_checkbox_placeholder" type="checkbox" tabindex="11"/>
 								<span id="CASL_checkbox"></span>
 							</label>
 						</span>
@@ -105,7 +106,7 @@
 		<picture>
 			<source srcset="img/chisel_100.png" media="(min-width: 1200px)">
 			<source srcset="img/chisel_75.png" media="(min-width: 768px)">
-			<img src="img/chisel_50.png" alt="chisel_50" />
+			<img src="img/chisel_50.png" alt="chisel" />
 		</picture>
 	</div>
 	</body>
