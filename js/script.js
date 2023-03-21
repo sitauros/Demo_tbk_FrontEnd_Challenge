@@ -11,7 +11,6 @@ $(document).ready(function() {
 
     // Remove "px" from CSS value, then parse as int
     var shavingBottom = parseInt($shaving.css("bottom").substring (0, $shaving.css("bottom").length -2));
-    var chiselBottom = parseInt($chisel.css("bottom").substring (0, $chisel.css("bottom").length -2));
 
     // Maximum number of pixels images can move without exiting upper section
     var distanceToBottom = shavingBottom;
@@ -23,7 +22,7 @@ $(document).ready(function() {
         var shavingDelta = Math.floor(scrollRatio * distanceToBottom) * -1;
         var chiselDelta = Math.floor(scrollRatio * distanceToTop);
     
-        $chisel.css({bottom: chiselBottom + chiselDelta + 'px'});
+        $chisel.css({bottom: chiselDelta + 'px'});
         $shaving.css({bottom: shavingBottom + shavingDelta + 'px'});
     });
 });
