@@ -104,10 +104,12 @@ body
 { 
 	position: relative;
 	float: right;
-	top: 25px;
-	right: 25px;
-	width: 15px;
-	height: 15px;
+	top: 5px;
+	right: 15px;
+	font-size: 35px;
+	line-height: 35px;
+	color: #9f173d;
+	z-index: 2;
 } 
 
 #cordial-1 
