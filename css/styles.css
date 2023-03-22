@@ -1,7 +1,7 @@
 @font-face
 {
 	font-family: 'FuturaPT-Book';
-	src: url('fonts/FuturaPT-Book.woff2');
+	src: url('../fonts/FuturaPT-Book.woff2');
 	font-weight: 400;
 	font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face
 {
 	font-family: 'FreightDispProBook-Italic';
-	src: url('fonts/FreightDispProBook-Italic.woff2');
+	src: url('../fonts/FreightDispProBook-Italic.woff2');
 	font-weight: 700;
 	font-style: italic;
 }
@@ -17,7 +17,7 @@
 @font-face
 {
 	font-family: 'FreightDispProSemibold-Regular';
-	src: url('fonts/FreightDispProSemibold-Regular.woff2');
+	src: url('../fonts/FreightDispProSemibold-Regular.woff2');
 	font-weight: 400;
 	font-style: normal;
 }
@@ -30,7 +30,7 @@ html
 body
 {
 	height: 100%;
-	background: url('img/background.png') left top / cover;
+	background: url('../img/background.png') left top / cover;
 	margin: 0;
 	padding: 0;
 }
@@ -188,7 +188,7 @@ body
 
 #sneak_list li
 {
-	list-style-image: url(img/list_bullet.png);
+	list-style-image: url(../img/list_bullet.png);
 	padding-left: 10px;
 	font-family: FuturaPT-Book;
 	font-size: 21px;
