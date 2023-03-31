@@ -32,3 +32,4 @@ See the demo in action on GitHub Pages [here](https://sitauros.github.io/Demo_tb
 * [MSDN - The Stacking Context](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context) - Useful for understanding z-index stacking rules
 * [W3C Custom Checkboxes](https://www.w3schools.com/howto/howto_css_custom_checkbox.asp) - Involves wrapping an input field around its label and the `::after` pseudo-element
 * [StackOverflow - Is localStorage availabie?](https://stackoverflow.com/a/25108867) - Directly applicable to session storage too
+* [BrowserStack - Reponsive Background Images](https://www.browserstack.com/guide/how-to-make-images-responsive) - Fixed issue when content height was larger than background image and creating white space.
